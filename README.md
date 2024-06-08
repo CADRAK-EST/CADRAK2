@@ -1,4 +1,4 @@
-# CADRAK2: Web-Based DXF File Viewer
+# CADRAK2
 
 ## Overview
 The primary goal of this project is to create a web-based DXF file viewer that can parse and display DXF files. Initially, the project will focus on the ability to open local DXF files, parse them using a Python-based parser, and visualize them on a web page using Node.js. Future iterations will include functionality to detect and highlight mistakes such as missing dimension lines and missing information from the information box.
