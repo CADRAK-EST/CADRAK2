@@ -1,0 +1,3 @@
+[submodule "CADRAKWeb"]
+	path = CADRAKWeb
+	url = https://github.com/CADRAK-EST/CADRAKWeb.git
