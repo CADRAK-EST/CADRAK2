@@ -13,36 +13,14 @@
 - pip
 
 ## API Endpoints
-- **`POST /upload`**: Uploads a DXF file.
-  - **Request**:
-    ```json
-    {
-      "file": "path/to/file.dxf"
-    }
-    ```
-  - **Response**:
-    ```json
-    {
-      "message": "File uploaded successfully",
-      "file_path": "uploads/file.dxf"
-    }
-    ```
+### CADRAKWeb
+- **`POST /upload`**: Uploads a DXF file. Inputs a DXF file. Outputs a filepath in the messenger.
 
-- **`POST /parse`**: Parses a DXF file.
-  - **Request**:
-    ```json
-    {
-      "file_path": "uploads/file.dxf"
-    }
-    ```
-  - **Response**:
-    ```json
-    {
-      "message": "File parsed successfully",
-      "parsed_data": { ... }
-    }
-    ```
+- **`POST /parse`**: Parses a DXF file. Inputs a filepath in the messenger. Outputs parsed .json data.
 
-#### Messenger
-- **`POST /api/upload`**: Receives and forwards file upload requests.
-- **`POST /api/parse`**: Forwards file parsing requests to the CADRAK Engine.
+### CADRAKMessenger
+- **`POST /upload`**: Receives file upload requests. Inputs a DXF file. Outputs a filepath.
+- **`POST /parse`**: Forwards file parsing requests to the CADRAK Engine. Inputs a filepath. Outputs parsed .json data.
+
+### CADRAKEngine
+- **`POST /parse`**: Parses a DXF file. Inputs a DXF files. Outputs parsed .json data.
