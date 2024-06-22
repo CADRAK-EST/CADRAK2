@@ -1,0 +1,9 @@
+Flask
+matplotlib
+numpy
+ezdxf
+networkx
+Flask-CORS
+scikit-learn
+alphashape
+requests
